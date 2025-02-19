@@ -15,12 +15,21 @@ body {
     place-content: center;
 }
 
-.container {
-    background-color: var(--color-2);
-    display: flex;
-    gap: 1rem;
-    padding: 2.5rem 1rem;
+.big-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;;
+}
+
+.container,
+.contained {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: .5rem;
+    padding: .25rem;
     border-radius: .5rem;
+    border: 1px dashed white;
+    border-spacing: 1rem;
 }
 
 .card {
@@ -28,7 +37,7 @@ body {
     background-color: var(--color-3);
     width: 150px;
     height: 250px;
-    border-radius: 1rem;
+    border-radius: .25rem;
 }
 
 .card:active {
